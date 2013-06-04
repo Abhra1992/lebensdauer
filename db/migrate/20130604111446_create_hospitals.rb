@@ -3,8 +3,8 @@ class CreateHospitals < ActiveRecord::Migration
     create_table :hospitals do |t|
       t.string :name
       t.references :location
-      t.int :capacity
-      t.int :availability
+      t.integer :capacity
+      t.integer :availability
 
       t.timestamps
     end
