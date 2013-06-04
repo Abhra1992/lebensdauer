@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Category:</b>
+  <%= @department.category %>
+</p>
+
+<p>
+  <b>Affiliation:</b>
+  <%= @department.affiliation %>
+</p>
+
+<p>
+  <b>Dtype:</b>
+  <%= @department.dtype %>
+</p>
+
+
+<%= link_to 'Edit', edit_department_path(@department) %> |
+<%= link_to 'Back', departments_path %>

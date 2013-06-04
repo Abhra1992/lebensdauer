@@ -1,4 +1,36 @@
 Lebensdauer::Application.routes.draw do
+  resources :drugs
+
+
+  resources :hospitals
+
+
+  resources :visits
+
+
+  resources :diseases
+
+
+  resources :departments
+
+
+  resources :medical_records
+
+
+  resources :enterprises
+
+
+  resources :vitals
+
+
+  resources :equipment
+
+
+  resources :facilities
+
+
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

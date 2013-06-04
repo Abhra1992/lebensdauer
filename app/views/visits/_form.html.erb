@@ -1,0 +1,45 @@
+<%= form_for(@visit) do |f| %>
+  <% if @visit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@visit.errors.count, "error") %> prohibited this visit from being saved:</h2>
+
+      <ul>
+      <% @visit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :hospital %><br />
+    <%= f.text_field :hospital %>
+  </div>
+  <div class="field">
+    <%= f.label :consultant %><br />
+    <%= f.text_field :consultant %>
+  </div>
+  <div class="field">
+    <%= f.label :issues %><br />
+    <%= f.text_field :issues %>
+  </div>
+  <div class="field">
+    <%= f.label :prescriptions %><br />
+    <%= f.text_area :prescriptions %>
+  </div>
+  <div class="field">
+    <%= f.label :vital %><br />
+    <%= f.text_field :vital %>
+  </div>
+  <div class="field">
+    <%= f.label :sensitivity %><br />
+    <%= f.text_field :sensitivity %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

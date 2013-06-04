@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Onset:</b>
+  <%= @medical_record.onset %>
+</p>
+
+<p>
+  <b>Closure:</b>
+  <%= @medical_record.closure %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @medical_record.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_medical_record_path(@medical_record) %> |
+<%= link_to 'Back', medical_records_path %>

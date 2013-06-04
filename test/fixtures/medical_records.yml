@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  onset: 2013-06-04
+  closure: 2013-06-04
+  comments: MyText
+
+two:
+  onset: 2013-06-04
+  closure: 2013-06-04
+  comments: MyText

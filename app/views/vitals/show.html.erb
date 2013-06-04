@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Weight:</b>
+  <%= @vital.weight %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @vital.height %>
+</p>
+
+<p>
+  <b>Pressure:</b>
+  <%= @vital.pressure %>
+</p>
+
+<p>
+  <b>Sugar:</b>
+  <%= @vital.sugar %>
+</p>
+
+
+<%= link_to 'Edit', edit_vital_path(@vital) %> |
+<%= link_to 'Back', vitals_path %>
